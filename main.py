@@ -1,4 +1,5 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
+import streamlit as st
 
 # List of documents
 documents = ["this is the first document", "this is the second document", "and this is the third one"]
@@ -14,4 +15,4 @@ vocab = vectorizer.vocabulary_
 
 # Get the term-document matrix
 td_matrix = X.toarray()
-print(td_matrix)
+st.write(td_matrix)
